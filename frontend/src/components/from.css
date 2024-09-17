@@ -1,0 +1,71 @@
+/* General styles */
+body {
+  /* padding-right:98vh; */
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+  }
+  
+  /* Card container */
+  .form-card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+    margin: 20px;
+  }
+  
+  /* Form elements */
+  label {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+    font-size: 16px;
+  }
+  
+  input, select {
+    width: 60%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+  }
+  
+  /* Button styling */
+  button {
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  
+  button:hover {
+    background-color: #45a049;
+  }
+  
+  /* Media query for mobile responsiveness */
+  @media (max-width: 480px) {
+    .form-card {
+      max-width: 90%;
+    }
+  
+    label {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    input, select {
+      width: 100%;
+    }
+  }
+  

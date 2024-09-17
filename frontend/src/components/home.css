@@ -1,0 +1,37 @@
+/* Container for the whole layout */
+.home-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #f4f4f4;
+    height: 100vh;
+    box-sizing: border-box;
+  }
+  
+  /* Form section styling */
+  .form-section {
+    flex: 1;
+    margin-right: 20px; /* Space between form and counts */
+  }
+  
+  /* Counts section styling */
+  .counts-section {
+    flex: 1;
+  }
+  
+  /* Media query for mobile responsiveness */
+  @media (max-width: 768px) {
+    .home-container {
+      flex-direction: column;
+    }
+  
+    .form-section {
+      margin-right: 0;
+      margin-bottom: 20px; /* Space between form and counts on mobile */
+    }
+  
+    .counts-section {
+      margin: 0;
+    }
+  }
+  
