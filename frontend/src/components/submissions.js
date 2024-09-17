@@ -11,7 +11,7 @@ const SubmissionsList = () => {
   useEffect(() => {
     const fetchSubmissions = async () => {
       try {
-        const res = await axios.get('http://localhost:5000/api/submissions'); // Assuming you have a route that fetches all submissions
+        const res = await axios.get('https://kietlabs-backend.onrender.com/api/submissions'); // Assuming you have a route that fetches all submissions
         setSubmissions(res.data);
       } catch (error) {
         console.error('Error fetching submissions', error);

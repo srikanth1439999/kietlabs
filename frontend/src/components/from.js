@@ -23,7 +23,7 @@ const Form = () => {
   useEffect(() => {
     const fetchSubmissionCounts = async () => {
       try {
-        const response = await axios.get('http://localhost:5000/api/submission-count');
+        const response = await axios.get('https://kietlabs-backend.onrender.com/api/submission-count');
         setSubmissionCounts(response.data);
       } catch (error) {
         console.error('Error fetching submission counts:', error);
@@ -56,7 +56,7 @@ const Form = () => {
     }
 
     try {
-      const response = await axios.post('http://localhost:5000/api/submit', formData);
+      const response = await axios.post('https://kietlabs-backend.onrender.com/api/submit', formData);
       alert('Submission successful!');
       console.log('Submission successful:', response.data);
       window.location.reload(); // Refresh the page after successful submission
